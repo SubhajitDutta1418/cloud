@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"], input[type="number"], select {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .payment-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      body {
+		  background-image: url('1.jpg');
+		  background-size: 100%;
+		}
+
+    </style>
+  </head>
+  <body>
+    <p>&nbsp;</p>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Payment Page</h1>
+    <p>&nbsp;</p>
+    <div class="payment-form">
+      <form id="payment-form">
+        <label for="name">Name on card:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="card-number">Card number:</label>
+        <input type="number" id="card-number" name="card-number" required>
+        <label for="expiry-month">Expiration Date:</label>
+        <select id="expiry-month" name="expiry-month" required>
+          <option value="">Month</option>
+          <option value="01">01 - January</option>
+          <option value="02">02 - February</option>
+          <option value="03">03 - March</option>
+          <option value="04">04 - April</option>
+          <option value="05">05 - May</option>
+          <option value="06">06 - June</option>
+          <option value="07">07 - July</option>
+          <option value="08">08 - August</option>
+          <option value="09">09 - September</option>
+          <option value="10">10 - October</option>
+          <option value="11">11 - November</option>
+          <option value="12">12 - December</option>
+        </select>
+        <select id="expiry-year" name="expiry-year" required>
+          <option value="">Year</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+        </select>
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" name="cvv" required>
+        <input type="submit" value="Submit Payment">
